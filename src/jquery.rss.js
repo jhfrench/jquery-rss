@@ -105,7 +105,7 @@
     this.target.append(html.layout)
  
     if (html.entries.length !== 0) {
-      $.isFunction(self.options.onData) && self.options.onData.call(self);
+      $.isFunction(this.options.onData) && this.options.onData.call(this);
       this.appendEntriesAndApplyEffects($("entries", html.layout), html.entries)
     }
  
